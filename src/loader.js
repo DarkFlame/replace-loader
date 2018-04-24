@@ -17,5 +17,5 @@ export default function (source) {
     let compiler = template(source,compilerOptions);
     source = compiler(options.data);
     console.log(source)
-    return `export default ${ JSON.stringify(source) }`;
+    return JSON.stringify(source);
 };
